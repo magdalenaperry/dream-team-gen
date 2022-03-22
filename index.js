@@ -3,7 +3,6 @@ const fs = require('fs');
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
-
     
 const dreamTeam = [];
 
@@ -80,12 +79,8 @@ const internQs = [{
         name: "internId"
     }, {
         type: "input",
-        message: "What is the intern's office number?",
+        message: "What is the intern's school?",
         name: "internOfficeNumber"
-    }, {
-        type: "input",
-        message: "What is the intern's Github username?",
-        name: "internGithub"
     }
 ]
 // questions for engineers
