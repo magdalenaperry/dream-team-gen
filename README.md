@@ -17,7 +17,7 @@ This is a team profile generator made using inquirer. The program is test-based 
 
 ## Visuals
 ---
-[Demo Link](https://www.github.com/magdalenaperry)
+[Demo Link](https://youtu.be/qzgjg9IaEO4)
 
 
 ## Installation
