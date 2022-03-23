@@ -12,7 +12,8 @@ const cards = function(cardteam){
         <h4 class="card-title">${cardteam[i].role}</h4>
         <p class="card-text">ID: ${cardteam[i].id}</p>
         <p class="card-text">Office #: ${cardteam[i].officeNumber}</p>
-        <a class="card-text">${cardteam[i].email}</a>
+        <a href = "mailto:${cardteam[i].email}"
+        class = "card-text">${cardteam[i].email}</a>
     </div>
 </div>`
         } else if (cardteam[i].role === "Engineer"){
@@ -21,8 +22,9 @@ membersCard += `<div class="col-4 card border-success my-5 pb-5">
     <div class="card-body">
         <h4 class="card-title">${cardteam[i].role}</h4>
         <p class="card-text">ID: ${cardteam[i].id}</p>
-        <span><a class="card-text">www.github.com/${cardteam[i].github}</a><span>
-        <a class="card-text">${cardteam[i].email}</a>
+        <div><a class="card-text">www.github.com/${cardteam[i].github}</a></div><br>
+        <div><a href = "mailto:${cardteam[i].email}"
+        class = "card-text">${cardteam[i].email}</a></div>
     </div>
 </div>`
         }else{
@@ -32,7 +34,8 @@ membersCard += `<div class="col-4 card border-success my-5 pb-5">
         <h4 class="card-title">${cardteam[i].role}</h4>
         <p class="card-text">ID: ${cardteam[i].id}</p>
         <p class="card-text">School: ${cardteam[i].school}</p>
-        <a class="card-text">${cardteam[i].email}</a>
+        <a href = "mailto:${cardteam[i].email}"
+        class = "card-text">${cardteam[i].email}</a>
     </div>
 </div>`
         }
