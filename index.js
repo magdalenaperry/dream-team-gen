@@ -30,15 +30,15 @@ const initQ = [{
     name: "add",
     choices: [{
             name: "Engineer",
-            // value: "engineer"
+            value: "engineer"
         },
         {
             name: "Intern",
-            // value: "intern"
+            value: "intern"
         },
         {
             name: "I'm finished",
-            // value: "none"
+            value: "none"
         }
     ],
 }]
@@ -50,15 +50,15 @@ const employeeTypeQs = {
     name: "add",
     choices: [{
             name: "Engineer",
-            // value: "engineer"
+            value: "engineer"
         },
         {
             name: "Intern",
-            // value: "intern"
+            value: "intern"
         },
         {
             name: "I'm finished",
-            // value: "none"
+            value: "none"
         }
     ]
 }
@@ -109,9 +109,8 @@ const engineerQs = [{
 const init = function () {
     inquirer.prompt(initQ).then((answer) => {
         const manager = new Manager(answer.name, answer.id, answer.email, answer.officeNumber);
-        dreamTeam.push(initQ);
+        dreamTeam.push(manager);
 
-        
         if (answer.add === "intern") {
             internQuestions();
         } else if (answer.add === "engineer") {
@@ -152,10 +151,10 @@ const employeeType = function () {
     })
 }
 
-// create file in dist
+// create html 
 const renderTeam = function () {
-    fs.writeFileSync("./dist/team-profiles.html", fileGenerate(dreamTeam), 'utf-8');
+    // console.log(dreamTeam)
+    fs.writeFileSync("./dist/team-profiles.html", fileGenerate(dreamTeam));
 }  
-
 
 init();
