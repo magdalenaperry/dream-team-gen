@@ -4,7 +4,7 @@ describe('Intern', () => {
     describe('init', () => {
         it('should require a school name', () => {
             const intern = new Intern('David', 2, 'davetron@gmail.com', 'UNCC');
-            expect('school' in intern).toBe(true);
+            expect('school' in intern).toEqual(true);
 
         });
     });
@@ -13,7 +13,7 @@ describe('Intern', () => {
     describe("getSchool", () => {
         it('should return the school', () => {
             const intern = new Intern('David', 2, 'davetron@gmail.com', 'UNCC')
-            expect(intern.getSchool()).toBe('UNCC');
+            expect(intern.getSchool()).toEqual('UNCC');
 
         });
     });
